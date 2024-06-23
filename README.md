@@ -6,7 +6,7 @@ This project is databases learning project. Whole workflow was divided into thre
 2. Database schema development, creating database in postgresql, filling in the database.
 3. Writing database queries.
 
-## Description of subject area and development ER-diagram. ##
+## Description of subject area and development of the ER-diagram ##
 
 In results first stage was developed [ER-diagram of subject area](https://github.com/MikhailCherepanovD/Passenger-air-transportation/blob/master/ERDiagram.pdf). 
 
@@ -50,9 +50,11 @@ Database queries in postgresql language:
 
 ## To run
 
-1. git clone [git@github.com:MikhailCherepanovD/Passenger-air-transportation.git](git@github.com:MikhailCherepanovD/Passenger-air-transportation.git)
-
-2. To create database:
+1. Clone the repository:
+ ```
+git clone git@github.com:MikhailCherepanovD/Passenger-air-transportation.git
+```
+2. Create the database:
 
 ```
 psql -h localhost -p 5432 -U postgres -c "CREATE DATABASE airtransportation;"
@@ -60,7 +62,7 @@ psql -h localhost -p 5432 -U postgres -c "CREATE DATABASE airtransportation;"
 psql -h localhost -p 5432 -U postgres -d airtransportation -f createDB.sql
 
 ```
-2. To fill database:
+3. Fill the database:
 
 ```
 python3 ./ InsertingTables.py
